@@ -6,7 +6,7 @@ body {
     height: 100vh;
     margin: 0;    
     /* background-color:powderblue; */
-    height: 100vh;
+    width: 100vw;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif    
 }
 
@@ -42,8 +42,7 @@ body {
     margin: 0 auto;
     padding: 30px;
     float: center;
-    height: auto;
-    min-height: 300px;
+    min-height: 1000px;
 }
 
 .col-25 {

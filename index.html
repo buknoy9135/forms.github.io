@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+
+    <body>     
+        <div class="container">
+            <h1 id="title">Learn Programming</h1>        
+                           
+        <!-- welcome message -->
+            <p id="description">Hi There! <br />
+                <br />
+                Thank you for joining our HTML & CSS class! <br /> We'd love your input on the next programming language for our upcoming free course.<br />
+                <br>
+                Results will be sent through email, so stay tuned!</p>
+
+            <p id="survey-form">Survey Form</p>
+                <form method="get">
+                <form id="survey-form">
+                    <!-- for name input -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="name">Full Name:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="name-label" name="name" minlength="10" required placeholder="ex: John Doe" /> <br />
+                        </div>
+                    </div>
+
+                    <!-- for email input -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="email">Email Adress:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="email" id="email-label" name="email" required placeholder="ex: johndoe@email.com" /> <br />
+                        </div>
+                    </div>
+
+                    <!-- for mobile phone number input -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="number">Mobile Number:</label>
+                        </div> 
+                        <div class="col-75">
+                            <input type="tel" id="number-label" name="number" pattern="\d{11}" required placeholder="ex: 09451234567" /> <br />
+                        </div>
+                    </div>
+
+                    <!-- Gender -->
+                    <div class="gender-container">
+                        <div class="row">
+                            <div class="col-25">                    
+                                <label>Gender:</label> 
+                            </div>
+                            <div class="col-75">                       
+                                <select name="name attribute" id="name-attribute" required>
+                                    <option value="" selected disabled>Select gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Non-Binary">Non-Binary</option>
+                                </select> 
+                            </div>         
+                        </div>
+                    </div>  
+                    <br />                               
+                                      
+                    <!-- participant RSVP -->
+                    <div class="rsvp-container">                
+                        <label for="dropdown">Will you be attending?</label> <br />
+                        <input type="radio" id="name attribute" name="name attribute" value="Yes" checked> I want to participate and attend the event <br />
+                        <input type="radio" id="name attribute" name="name attribute" value="No."> I don't want to attend the event. <br />
+                        <input type="radio" id="name attribute" name="name attribute" value="Maybe."> I'm not sure, but I want to participate. <br />
+                    </div>
+                    <br />
+
+                    <!-- PL selection -->
+                    <label>Select one or more programming languages you're interested in:</label>
+                    <div class="checkbox-container">
+                        <div class="column">
+                            <input type="checkbox" name="PL" value="C"> C <br />
+                            <input type="checkbox" name="PL" value="C++"> C++ <br />
+                            <input type="checkbox" name="PL" value="C#"> C# <br />
+                            <input type="checkbox" name="PL" value="Java"> Java <br />
+                            <input type="checkbox" name="PL" value="Javascript"> Javascript <br />
+                            <input type="checkbox" name="PL" value="SQL"> SQL <br />
+                            <input type="checkbox" name="PL" value="Visual Basic"> Visual Basic <br />
+                            <input type="checkbox" name="PL" value="Golang"> Golang <br />
+                        </div>
+                        <div class="column">
+                            <input type="checkbox" name="PL" value="PHP"> PHP <br />
+                            <input type="checkbox" name="PL" value="Python"> Python <br />
+                            <input type="checkbox" name="PL" value="Rust"> Rust <br />
+                            <input type="checkbox" name="PL" value="Ruby"> Ruby <br />
+                            <input type="checkbox" name="PL" value="R"> R <br />
+                            <input type="checkbox" name="PL" value="Swift"> Swift <br />
+                            <input type="checkbox" name="PL" value="Kotlin"> Kotlin <br />
+                            <input type="checkbox" name="PL" value="Perl"> Perl <br />
+                        </div>
+                    </div>
+                    <br />
+                                        
+                    <!-- comment section -->
+                    <label for="comment">Comments:</label> <br />
+                    <textarea name="comment" id="comment-box" maxlength="100" rows="5" cols="70"></textarea> <br />
+                    <br />
+                            
+                    <!-- Submit -->
+                    <input type="submit" id="submit" value="Submit" />
+                </form>
+        </div>            
+    </body>
+</html>

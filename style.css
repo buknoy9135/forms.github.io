@@ -103,7 +103,7 @@ div {
 
 .checkbox-container {
     display: flex;
-    gap: 20px;
+    gap: 0px;
 }
 
 .column {
@@ -111,32 +111,32 @@ div {
 }
 
 #comment-box {
-    width: 100%; /* Makes the text box responsive */
-    max-width: 400px; /* Limits the maximum width */
-    height: 100px; /* Adjust the height */
-    padding: 10px; /* Adds inner space */
-    border: 2px solid #333; /* Adds a solid border */
-    border-radius: 8px; /* Rounded corners */
-    background-color: #f9f9f9; /* Light background */
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Adds shadow */
-    font-size: 16px; /* Increases text size */
-    color: #333; /* Text color */
-    resize: none; /* Prevents resizing */
+    width: 100%; 
+    max-width: 400px; 
+    height: 100px;
+    padding: 10px; 
+    border: 2px solid #333;
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
+    font-size: 16px; 
+    color: #333; 
+    resize: none; 
 }
 
 #comment-box:focus {
     outline: none;
-    border-color: #ff6600; /* Changes border color when clicked */
-    box-shadow: 0 0 10px rgba(255, 102, 0, 0.5); /* Glowing effect */
+    border-color: #ff6600; 
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.5); 
 }
 
 #submit {
-    background: linear-gradient(to right, #2196F3, #21CBF3); /* Blue gradient */
-    border: 2px solid black; /* Black outline */
-    padding: 8px 18px; /* Compact size */
-    border-radius: 6px; /* Less rounded corners */
+    background: linear-gradient(to right, #2196F3, #21CBF3); 
+    border: 2px solid black; 
+    padding: 8px 18px; 
+    border-radius: 6px; 
     color: black;
-    font-size: 14px; /* Smaller font size */
+    font-size: 14px; 
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
